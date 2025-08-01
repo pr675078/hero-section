@@ -169,15 +169,17 @@ margin-top: 0;
 
 .start-learning{
     font-family: "Inter", sans-serif;
-    width: 186px;
-    height:41px;
+    width: clamp(140px, 30vw, 186px);
+    height: clamp(35px, 7vw, 41px); 
     font-weight: lighter;
     border-radius: 25px;
     color: #ffff;
-    font-size: 22px;
+    font-size: clamp(16px, 3vw, 22px);
     background-color: black;
     cursor: pointer;
     border: 1px solid #ffff;
+    margin-top: 2vh; 
+    transition: all 0.3s ease;
 }
 /* ==========responsive adjustments============ */
 
@@ -204,6 +206,9 @@ margin-top: 0;
         line-height: 1.3;
         margin-top: 2px;
     }
+    .start-learning {
+        margin-top: 1.8vh;
+    }
 }
 
 @media (max-width: 480px) {
@@ -224,7 +229,18 @@ margin-top: 0;
         max-width: 90%;
         margin-top: 2px;
     }
+    .start-learning {
+        width: 130px;
+        height: 36px;
+        font-size: 16px;
+        margin-top: 1.5vh;
+    }
 }
 
-
+@media (hover: hover) {
+    .start-learning:hover {
+        background-color: #333;
+        transform: scale(1.05);
+    }
+}
  
