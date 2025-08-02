@@ -104,6 +104,7 @@ body{
     max-width: 100%;
     border-radius: 50%;
     margin: 7vh auto 0;
+    z-index: 2;
 }
 
 /* ============responsive mainlogo============== */
@@ -159,10 +160,10 @@ margin-top: 0;
 text-shadow: 0 0 30px rgba(231, 241, 34, 0.5);
 }
 
-@keyframes conicLoop {
-0% { background-position: 0% 50%; }
-100% { background-position: 100% 50%; }
-}
+ @keyframes conicLoop {
+        0% { background-position: 0% 50%; }
+        100% { background-position: 100% 50%; }
+        }
 
 .message{
      font-family: "Alumni Sans", sans-serif;
@@ -252,6 +253,7 @@ text-shadow: 0 0 30px rgba(231, 241, 34, 0.5);
     }
 }
  
+
 
 
 
