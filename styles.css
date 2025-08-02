@@ -148,12 +148,19 @@ font-family: "Rosario", sans-serif;
 font-size: clamp(18px, 4vw, 30px);
 font-weight: lighter;
 letter-spacing: clamp(1px, 1vw, 2px);
-background: linear-gradient(to right, #E7F122, #25C6DF);
+background: linear-gradient(45deg, #E7F122, #25C6DF, #E7F122, #25C6DF);
+background-size: 400% 400%;
 -webkit-background-clip: text; 
 background-clip: text;
 color: transparent; 
 text-transform: uppercase;
 margin-top: 0;
+text-shadow: 0 0 30px rgba(231, 241, 34, 0.5);
+}
+
+@keyframes conicLoop {
+0% { background-position: 0% 50%; }
+100% { background-position: 100% 50%; }
 }
 
 .message{
@@ -244,4 +251,5 @@ margin-top: 0;
     }
 }
  
+
 
