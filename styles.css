@@ -151,6 +151,7 @@ letter-spacing: clamp(1px, 1vw, 2px);
 background: linear-gradient(45deg, #E7F122, #25C6DF, #E7F122, #25C6DF);
 background-size: 400% 400%;
 -webkit-background-clip: text; 
+animation: conicLoop 3s linear infinite reverse;
 background-clip: text;
 color: transparent; 
 text-transform: uppercase;
@@ -251,5 +252,6 @@ text-shadow: 0 0 30px rgba(231, 241, 34, 0.5);
     }
 }
  
+
 
 
